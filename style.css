@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-image: linear-gradient(180deg, rgb(133, 210, 255) -50%, rgb(145, 184, 255) 69%,rgb(111, 164, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-image: url(/img/map.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.player-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    display: flex;
+    gap: 0.5em;
+    align-items: flex-end;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+input[type="text"],
+button{
+    font-weight: bold;
+    font-size: 18px;
+    height: 44px;
+    border-radius: 4px;
+    outline: 0;
+}
+
+input[type="text"]{
+    outline: 0;
+    padding-left: 0.5em;
+    border: 3px solid black;
+    width: 150px;
+    text-transform: uppercase;
+}
+input[type="text"]:focus{
+        border-color: pink;
+}
+
+button{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: greenyellow;
+    border: 0px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+button:active{
+    position: relative;
+    top: 1px;
+}

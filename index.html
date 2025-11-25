@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multiplayer</title>
+</head>
+<body>
+    <div class="game-container">
+        
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC4ckCgSyKwn1Cv7j_ojxtG-Td9lVcU1Lk",
+            authDomain: "webapp-game-test.firebaseapp.com",
+            databaseURL: "https://webapp-game-test-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "webapp-game-test",
+            storageBucket: "webapp-game-test.firebasestorage.app",
+            messagingSenderId: "761457111476",
+            appId: "1:761457111476:web:5a6288893cff7d23c6c2e1"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="/app.js"></script>
+</body>
+</html>
